@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th=""www.thymeleaf.org>
+<head>
+    <meta charset="UTF-8">
+    <title>Song Form Title</title>
+</head>
+<body>
+<form action="#" th:action="@{/songform}" th:object="${song}"method="post">
+
+    Name:<br>
+    <input type="'text" th:field="*{name}"/><br />
+    Artist<br>
+    <input type="text" th:field="*{artist}"/><br />
+    Album<br>
+    <input type="text" th:field="*{album}"/><br />
+    Rating<br>
+    <input type="text" th:field="*{rating}"/><br />
+    Year<br>
+    <input type="text" th:field="*{year}"/><br />
+
+    <input type="submit" value="Submit"/>
+
+</form>
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/a/aa/Simon_Cowell_in_December_2011.jpg" alt="Simon Cowel picture ">
+
+</body>
+</html>
